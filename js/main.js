@@ -49,7 +49,7 @@ $(document).ready(function() {
 
      });
 
-          // Show more on click
+    // Show more on click
      $("#badge-more2").on("click", function() {
 
         // Show/hide the div
