@@ -47,6 +47,13 @@ $(document).ready(function() {
            $("#badge-more").text("View Abstract");
         }
 
+        // Change the button (2 test)
+        if ($("#badge-more2").text() == "View Abstract") {
+           $("#badge-more2").text("Hide Abstract");
+        } else {
+           $("#badge-more2").text("View Abstract");
+        }
+
      });
 
      // popover function
