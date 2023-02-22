@@ -47,7 +47,15 @@ $(document).ready(function() {
            $("#badge-more").text("View Abstract");
         }
 
-        // Change the button (2 test)
+     });
+
+          // Show more on click
+     $("#badge-more2").on("click", function() {
+
+        // Show/hide the div
+        $("#read-more").fadeToggle("fast");
+
+        // Change the button
         if ($("#badge-more2").text() == "View Abstract") {
            $("#badge-more2").text("Hide Abstract");
         } else {
