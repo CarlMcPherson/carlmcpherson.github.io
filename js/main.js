@@ -32,19 +32,56 @@ $(document).ready(function() {
   })
 
   // Initally hide the read more div
-     $("#read-more").css("display", "none");
+     $("#read-more1").css("display", "none");
 
      // Show more on click
-     $("#badge-more").on("click", function() {
+     $("#badge-more1").on("click", function() {
 
         // Show/hide the div
-        $("#read-more").fadeToggle("fast");
+        $("#read-more1").fadeToggle("fast");
 
         // Change the button
-        if ($("#badge-more").text() == "View Abstract") {
-           $("#badge-more").text("Hide Abstract");
+        if ($("#badge-more1").text() == "View Abstract") {
+           $("#badge-more1").text("Hide Abstract");
         } else {
-           $("#badge-more").text("View Abstract");
+           $("#badge-more1").text("View Abstract");
+        }
+
+     });
+
+    // Show more on click
+     $("#badge-more1").on("click", function() {
+
+        // Show/hide the div
+        $("#read-more1").fadeToggle("fast");
+
+        // Change the button
+        if ($("#badge-more1").text() == "View Abstract") {
+           $("#badge-more1").text("Hide Abstract");
+        } else {
+           $("#badge-more1").text("View Abstract");
+        }
+
+     });
+
+
+   ///////////////////////////////////////  
+   // BUTTON 2 
+   ///////////////////////////////////////  
+       // Initally hide the read more div
+     $("#read-more2").css("display", "none");
+
+     // Show more on click
+     $("#badge-more2").on("click", function() {
+
+        // Show/hide the div
+        $("#read-more2").fadeToggle("fast");
+
+        // Change the button
+        if ($("#badge-more2").text() == "View Abstract") {
+           $("#badge-more2").text("Hide Abstract");
+        } else {
+           $("#badge-more2").text("View Abstract");
         }
 
      });
@@ -53,7 +90,7 @@ $(document).ready(function() {
      $("#badge-more2").on("click", function() {
 
         // Show/hide the div
-        $("#read-more").fadeToggle("fast");
+        $("#read-more2").fadeToggle("fast");
 
         // Change the button
         if ($("#badge-more2").text() == "View Abstract") {
