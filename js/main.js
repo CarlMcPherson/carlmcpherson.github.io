@@ -26,7 +26,9 @@ $(document).ready(function() {
     }, 400);
   });
 
-  // tooltips function
+   ///////////////////////////////////////  
+   // BUTTON 1
+   ///////////////////////////////////////
   $(function() {
     $('[data-toggle="tooltip"]').tooltip()
   })
@@ -49,6 +51,7 @@ $(document).ready(function() {
 
      });
 
+     /*
     // Show more on click
      $("#badge-more1").on("click", function() {
 
@@ -63,6 +66,7 @@ $(document).ready(function() {
         }
 
      });
+     */
 
 
    ///////////////////////////////////////  
@@ -86,6 +90,7 @@ $(document).ready(function() {
 
      });
 
+     /*
     // Show more on click
      $("#badge-more2").on("click", function() {
 
@@ -100,7 +105,8 @@ $(document).ready(function() {
         }
 
      });
-
+      */
+     
      // popover function
      $('[data-toggle="popover"]').popover();
 
