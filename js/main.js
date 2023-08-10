@@ -106,6 +106,27 @@ $(document).ready(function() {
 
      });
       */
+
+   ///////////////////////////////////////  
+   // BUTTON 3 
+   ///////////////////////////////////////  
+       // Initally hide the read more div
+     $("#read-more3").css("display", "none");
+
+     // Show more on click
+     $("#badge-more3").on("click", function() {
+
+        // Show/hide the div
+        $("#read-more3").fadeToggle("fast");
+
+        // Change the button
+        if ($("#badge-more3").text() == "View Abstract") {
+           $("#badge-more3").text("Hide Abstract");
+        } else {
+           $("#badge-more3").text("View Abstract");
+        }
+
+     });
      
      // popover function
      $('[data-toggle="popover"]').popover();
