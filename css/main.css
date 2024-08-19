@@ -54,7 +54,7 @@ h1 {
 h2,
 h3 {
   margin: 0 0 2rem !important;
-  color: slategray;
+  color: black;
 }
 
 h4 {
@@ -128,7 +128,7 @@ blockquote footer {
 
 .publications {
   list-style-type: none;
-  padding-left: 2.5rem;
+  padding-left: 0.5rem;
 }
 
 .publications li {
