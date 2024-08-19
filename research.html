@@ -1,163 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Metadata for the Webpage -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carl McPherson</title>
 
-<head>
-   <!-- Metadata for the Webpage -->
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Carl McPherson</title>
+    <!-- Favicons -- We recommend this site for generating favicons: https://www.favicon-generator.org/ -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="favicons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
 
-   <!-- Favicons -- We recommend this site for generating favicons: https://www.favicon-generator.org/ -->
-   <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
-   <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
-   <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
-   <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
-   <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
-   <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
-   <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
-   <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
-   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
-   <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-   <meta name="msapplication-TileColor" content="#ffffff">
-   <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
-   <meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap CSS files-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
 
-   <!-- Bootstrap CSS files-->
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- jQuery UI CSS (optional) -->
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
 
-   <!-- jQuery UI CSS (optional) -->
-   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- Google web fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600"
+      rel="stylesheet"
+    />
 
-   <!-- Google web fonts -->
-   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600" rel="stylesheet">
+    <!-- Font Awesome Web Icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
-   <!-- Font Awesome Web Icons -->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Academicons Courtesy of https://jpswalsh.github.io/academicons/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+    />
 
-   <!-- Academicons Courtesy of https://jpswalsh.github.io/academicons/ -->
-   <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <!-- Local styles -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-   <!-- Local styles -->
-   <link rel="stylesheet" href="css/main.css">
+  <body>
+    <!-- navbar include -->
+    <div w3-include-html="navbar.html"></div>
 
-</head>
+    <div class="spacer-div-3 hidden-xs hidden-xs"></div>
 
-<body>
+    <!-- Main content    -->
+    <div id="main-container" class="container">
+      <div class="row">
+        <div class="col-sm-14">
+          <!-- Working Papers -->
+          <h3 class="push-down-4"><span>Working Papers</span></h3>
 
-   <!-- navbar include -->
-   <div w3-include-html="navbar.html"></div>
+          <ul class="publications">
+            <font size="+1">
+              <b
+                ><a
+                  href="https://bfi.uchicago.edu/wp-content/uploads/2023/08/BFI_WP_2023-108.pdf"
+                >
+                  The Impact of Incarceration on Employment, Earnings, and Tax
+                  Filing
+                </a>
+              </b>
+            </font>
+            <p style="margin-left: 5%">
+              (with
+              <a
+                href="https://sites.google.com/view/andygarin/home"
+                style="color: black"
+                >A. Garin</a
+              >,
+              <a href="http://www.dmitrikoustas.com/" style="color: black"
+                >D. Koustas</a
+              >,
+              <a href="https://www.samuel-norris.com/" style="color: black"
+                >S. Norris</a
+              >,
+              <a href="https://www.matthewpecenco.com/" style="color: black"
+                >M. Pecenco</a
+              >,
+              <a href="https://ekrose.github.io/" style="color: black"
+                >E.K. Rose</a
+              >,
+              <a href="https://yotamshemtov.github.io/" style="color: black"
+                >Y. Shem-Tov</a
+              >
+              and
+              <a href="https://www.jeff-weaver.com/home" style="color: black"
+                >J. Weaver</a
+              >) <br />
 
-   <div class="spacer-div-3 hidden-xs hidden-xs"></div>
+              <em> Revisions requested at Econometrica </em> <br />
 
-   <!-- Main content    -->
-   <div id="main-container" class="container">
-<div class="row">
-         <div class="col-sm-14">
-            <!-- Working Papers -->
-            <h3 class="push-down-4"><span>Working Papers</span></h3>
+              <span class="badge" id="abstractButton3">View Abstract</span> |
+              <a
+                href="https://bfi.uchicago.edu/wp-content/uploads/2023/08/BFI_WP_2023-108.pdf"
+              >
+                Paper
+              </a>
+              <!-- | <a href="">Appendix</a> -->
+            </p>
 
-            <ul class="publications">
+            <div
+              id="read-more3"
+              style="margin-left: 5%; padding: 0 0 2em 0; display: none"
+            >
+              We study the effect of incarceration on wages, self-employment,
+              and taxes and transfers in North Carolina and Ohio using two
+              quasi-experimental research designs: discontinuities in sentencing
+              guidelines and random assignment to judges. Across both states,
+              incarceration generates short-term drops in economic activity
+              while individuals remain in prison. As a result, a year-long
+              sentence decreases cumulative earnings over five years by 13%.
+              Beyond five years, however, there is no evidence of lower
+              employment, wage earnings, or self-employment in either state, as
+              well as among defendants with no prior incarceration history.
+              These results suggest that upstream factors, such as other types
+              of criminal justice interactions or pre-existing labor market
+              detachment, are more likely to be the cause of low earnings among
+              the previously incarcerated, who we estimate would earn $5,000 per
+              year on average if spared a prison sentence.
+            </div>
 
-                <font size="+1"> <b><a href="https://bfi.uchicago.edu/wp-content/uploads/2023/08/BFI_WP_2023-108.pdf"> The Impact of Incarceration on Employment, Earnings, and Tax Filing </a> </b> </font>
-               <p style="margin-left:5%;"> (with  <a href="https://sites.google.com/view/andygarin/home" style="color:black;">A. Garin</a>, <a href="http://www.dmitrikoustas.com/" style="color:black;">D. Koustas</a>, <a href="https://www.samuel-norris.com/" style="color:black;">S. Norris</a>, <a href="https://www.matthewpecenco.com/" style="color:black;">M. Pecenco</a>, <a href="https://ekrose.github.io/" style="color:black;">E.K. Rose</a>, <a href="https://yotamshemtov.github.io/" style="color:black;">Y. Shem-Tov</a> and <a href="https://www.jeff-weaver.com/home" style="color:black;">J. Weaver</a>) <br>
+            <font size="+1">
+              <b
+                ><a
+                  href="https://irle.berkeley.edu/wp-content/uploads/2023/09/min_wage_monopsony_WMR.pdf"
+                >
+                  Minimum Wage Effects and Monopsony Explanations
+                </a>
+              </b>
+            </font>
+            <p style="margin-left: 5%">
+              (with
+              <a href="https://justinwiltshire.com/" style="color: black"
+                >J. Wiltshire</a
+              >
+              [lead author],
+              <a
+                href="https://irle.berkeley.edu/people/michael-reich/"
+                style="color: black"
+                >M. Reich</a
+              >
+              and
+              <a
+                href="https://sites.google.com/view/denis-sosinskiy"
+                style="color: black"
+              >
+                D. Sosinskiy</a
+              >) <br />
 
-              <em> Revisions requested at Econometrica  </em> <br>   
+              <em> Revisions requested at Journal of Labor Economics </em>
+              <br />
 
-                <span class="badge" id="badge-more3">View Abstract</span> | <a href="https://bfi.uchicago.edu/wp-content/uploads/2023/08/BFI_WP_2023-108.pdf"> Paper </a> <!-- | <a href="">Appendix</a> -->
+              <span class="badge" id="abstractButton2">View Abstract</span> |
+              <a
+                href="https://irle.berkeley.edu/wp-content/uploads/2023/09/min_wage_monopsony_WMR.pdf"
+              >
+                Paper
+              </a>
+            </p>
 
-              <div id="read-more3" style="margin-left:5%; padding: 0 0 2em 0;">
-                     We study the effect of incarceration on wages, self-employment, and taxes and transfers in North Carolina and Ohio using two quasi-experimental research designs: discontinuities in sentencing guidelines and random assignment to judges. Across both states, incarceration generates short-term drops in economic activity while individuals remain in prison. As a result, a year-long sentence decreases cumulative earnings over five years by 13%. Beyond five years, however, there is no evidence of lower employment, wage earnings, or self-employment in either state, as well as among defendants with no prior incarceration history. These results suggest that upstream factors, such as other types of criminal justice interactions or pre-existing labor market detachment, are more likely to be the cause of low earnings among the previously incarcerated, who we estimate would earn $5,000 per year on average if spared a prison sentence.
-               </div>
-               
-               <font size="+1"> <b><a href="https://irle.berkeley.edu/wp-content/uploads/2023/09/min_wage_monopsony_WMR.pdf"> Minimum Wage Effects and Monopsony Explanations </a> </b> </font>
-               <p style="margin-left:5%;"> (with  <a href="https://justinwiltshire.com/" style="color:black;">J. Wiltshire</a> [lead author], <a href="https://irle.berkeley.edu/people/michael-reich/" style="color:black;">M. Reich</a> and <a href="https://sites.google.com/view/denis-sosinskiy" style="color:black;"> D. Sosinskiy</a>) <br>
-
-               <em> Revisions requested at Journal of Labor Economics  </em> <br>   
-  
-
-               <span class="badge" id="badge-more2">View Abstract</span> | <a href="https://irle.berkeley.edu/wp-content/uploads/2023/09/min_wage_monopsony_WMR.pdf"> Paper </a>  
-
-              <div id="read-more2" style="margin-left:5%;">
-                    We present the first causal analysis of a seven-year run-up of minimum wages to $15. Using a novel stacked county-level synthetic control estimator and data on fast-food restaurants, we find substantial pay growth and no disemployment. Our results hold among lower-wage counties and counties without local minimum wages. Minimum wage increases reduce separation rates and raise wages faster than prices at McDonald’s stores; both findings imply a monopsonistic labor market with declining rents. In the tight post-pandemic labor market, when labor supply becomes more elastic, we find positive employment effects. These become larger and statistically significant after addressing pandemic-response confounds.
-               </div>
-
-
-            </ul>
-
-         </div>
+            <div id="read-more2" style="margin-left: 5%; display: none">
+              We present the first causal analysis of a seven-year run-up of
+              minimum wages to $15. Using a novel stacked county-level synthetic
+              control estimator and data on fast-food restaurants, we find
+              substantial pay growth and no disemployment. Our results hold
+              among lower-wage counties and counties without local minimum
+              wages. Minimum wage increases reduce separation rates and raise
+              wages faster than prices at McDonald’s stores; both findings imply
+              a monopsonistic labor market with declining rents. In the tight
+              post-pandemic labor market, when labor supply becomes more
+              elastic, we find positive employment effects. These become larger
+              and statistically significant after addressing pandemic-response
+              confounds.
+            </div>
+          </ul>
+        </div>
       </div>
 
       <div class="row">
-         <div class="col-sm-14">
-            <!-- Publication -->
-            <h3 class="push-down-4"><span>Work in Progress</span></h3>
+        <div class="col-sm-14">
+          <!-- Publication -->
+          <h3 class="push-down-4"><span>Work in Progress</span></h3>
 
-            <ul class="publications">
-
-                <font size="+1"> <b><a href="" font-size: 3rem;> The Impact of Government Transfers on Migration </a> </b> </font>
-   
-               
-            </ul>
-
-         </div>
+          <ul class="publications">
+            <font size="+1">
+              <b
+                ><a href="" font-size: 3rem;>
+                  The Impact of Government Transfers on Migration
+                </a>
+              </b>
+            </font>
+          </ul>
+        </div>
       </div>
 
       <div class="row">
-         <div class="col-sm-14">
-            <!-- Publication -->
-            <h3 class="push-down-4"><span>Publications</span></h3>
+        <div class="col-sm-14">
+          <!-- Publication -->
+          <h3 class="push-down-4"><span>Publications</span></h3>
 
-            <ul class="publications">
+          <ul class="publications">
+            <font size="+1">
+              <b
+                ><a
+                  href="https://www.aeaweb.org/articles?id=10.1257/pandp.20201039"
+                  font-size:
+                  3rem;
+                >
+                  Is New Platform Work Different than Other Freelancing?
+                </a>
+              </b>
+            </font>
+            <p style="margin-left: 5%">
+              (with
+              <a
+                href="https://sites.google.com/view/andygarin/home"
+                style="color: black"
+                >A. Garin</a
+              >,
+              <a
+                href="https://sites.google.com/view/jacksonemilie"
+                style="color: black"
+                >E. Jackson</a
+              >
+              and
+              <a href="http://www.dmitrikoustas.com/" style="color: black"
+                >D. Koustas</a
+              >) <br />
+              <b> AEA Papers and Proceedings </b> (2020) <br />
 
-                <font size="+1"> <b><a href="https://www.aeaweb.org/articles?id=10.1257/pandp.20201039" font-size: 3rem;> Is New Platform Work Different than Other Freelancing? </a> </b> </font>
-               <p style="margin-left:5%;"> (with  <a href="https://sites.google.com/view/andygarin/home" style="color:black;">A. Garin</a>, <a href="https://sites.google.com/view/jacksonemilie" style="color:black;">E. Jackson</a> and <a href="http://www.dmitrikoustas.com/" style="color:black;">D. Koustas</a>) <br>
-               <b> AEA Papers and Proceedings  </b> (2020) <br>
+              <span class="badge" id="abstractButton1">View Abstract</span> |
+              <a href="http://www.dmitrikoustas.com/TaxData_P_P_2019.pdf">
+                Paper
+              </a>
+              |
+              <a
+                href="http://www.dmitrikoustas.com/Appendix_TaxData_P_P_2019.pdf"
+                >Appendix</a
+              >
+              |
+              <a
+                href="https://www.openicpsr.org/openicpsr/project/120686/version/V1/view?path=/openicpsr/120686/fcr:versions/V1&type=project"
+                >Replication Materials</a
+              >
+            </p>
 
-               <span class="badge" id="badge-more1">View Abstract</span> | <a href="http://www.dmitrikoustas.com/TaxData_P_P_2019.pdf"> Paper </a> | <a href="http://www.dmitrikoustas.com/Appendix_TaxData_P_P_2019.pdf">Appendix</a> | <a href="https://www.openicpsr.org/openicpsr/project/120686/version/V1/view?path=/openicpsr/120686/fcr:versions/V1&type=project">Replication Materials</a> </p>
-
-              <div id="read-more1" style="margin-left:5%;">
-                     The rise of freelance work in the online platform economy (OPE) has received considerable media and policy attention in recent years, but freelance work is by no means a new phenomenon. In this paper, we draw on I.R.S. tax records to identify instances when workers begin doing online platform work versus other freelance/independent contractor “gig” work for firms. We find gig work occurs around major reductions in outside income, and document usage over the lifecycle. Our results provide suggestive evidence on motivations for entering into each type of work.
-               </div>
-               
-               
-            </ul>
-
-         </div>
+            <div id="read-more1" style="margin-left: 5%; display: none">
+              The rise of freelance work in the online platform economy (OPE)
+              has received considerable media and policy attention in recent
+              years, but freelance work is by no means a new phenomenon. In this
+              paper, we draw on I.R.S. tax records to identify instances when
+              workers begin doing online platform work versus other
+              freelance/independent contractor “gig” work for firms. We find gig
+              work occurs around major reductions in outside income, and
+              document usage over the lifecycle. Our results provide suggestive
+              evidence on motivations for entering into each type of work.
+            </div>
+          </ul>
+        </div>
       </div>
+    </div>
 
-   </div>
+    <!-- footer include -->
+    <div w3-include-html="footer.html"></div>
 
-   <!-- footer include -->
-   <div w3-include-html="footer.html"></div>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-   <!-- jQuery -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap JS Library -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
 
-   <!-- Bootstrap JS Library -->
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <!-- html file include script | used for navbar and footer -->
+    <script src="js/w3data.js"></script>
+    <script>
+      w3IncludeHTML();
+    </script>
 
-   <!-- html file include script | used for navbar and footer -->
-   <script src="js/w3data.js"></script>
-   <script>
-      w3IncludeHTML()
-   </script>
+    <!-- Local scripts -->
+    <script src="js/main.js"></script>
 
-   <!-- Local scripts -->
-   <script src="js/main.js"></script>
-
-   <script>
-      $(document).ready(function() {
-         $("li#research a").addClass("active");
-         $("li#research a").addClass("hvr-bubble-bottom");
-
+    <script>
+      $(document).ready(function () {
+        $("li#research a").addClass("active");
+        $("li#research a").addClass("hvr-bubble-bottom");
       });
-   </script>
-
-</body>
-
+    </script>
+  </body>
 </html>
