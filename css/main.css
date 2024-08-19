@@ -234,6 +234,7 @@ h3 {
 h3 span {
   background-color: white;
   padding-right: 10px;
+  padding-left:0.5rem;
 }
 
 /* Format the footer ---------------------------------------------------------- */
