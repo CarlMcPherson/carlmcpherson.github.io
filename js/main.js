@@ -32,6 +32,7 @@ $(document).ready(function () {
   toggleAbstract("#abstractButton3", "#read-more3");
   toggleAbstract("#abstractButton4", "#read-more4");
   toggleAbstract("#abstractButton5", "#read-more5");
+  toggleAbstract("#abstractButton6", "#read-more6");
 });
 
 // Expander to show/hide all accordion panels
