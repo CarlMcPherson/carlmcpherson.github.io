@@ -1,162 +1,542 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Metadata for the Webpage -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carl McPherson</title>
 
-<head>
-   <!-- Metadata for the Webpage -->
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Carl McPherson</title>
+    <!-- Favicons -- We recommend this site for generating favicons: https://www.favicon-generator.org/ -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="favicons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
 
-   <!-- Favicons -- We recommend this site for generating favicons: https://www.favicon-generator.org/ -->
-   <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
-   <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
-   <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
-   <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
-   <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
-   <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
-   <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
-   <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
-   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
-   <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-   <meta name="msapplication-TileColor" content="#ffffff">
-   <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
-   <meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap CSS files-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
 
-   <!-- Bootstrap CSS files-->
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- jQuery UI CSS (optional) -->
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
 
-   <!-- jQuery UI CSS (optional) -->
-   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- Google web fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600"
+      rel="stylesheet"
+    />
 
-   <!-- Google web fonts -->
-   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600" rel="stylesheet">
+    <!-- Font Awesome Web Icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
-   <!-- Font Awesome Web Icons -->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Academicons Courtesy of https://jpswalsh.github.io/academicons/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+    />
 
-   <!-- Academicons Courtesy of https://jpswalsh.github.io/academicons/ -->
-   <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <!-- Local styles -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-   <!-- Local styles -->
-   <link rel="stylesheet" href="css/main.css">
+  <body>
+    <!-- navbar include -->
+    <div w3-include-html="navbar.html"></div>
 
-</head>
+    <div class="spacer-div-3 hidden-xs hidden-xs"></div>
 
-<body>
+    <!-- Main content    -->
+    <div id="main-container" class="container">
+      <div class="row">
+        <div class="col-sm-14">
 
-   <!-- navbar include -->
-   <div w3-include-html="navbar.html"></div>
+        <!------------- JOB MARKET PAPER ------------->
+      <div class="row">
+        <div class="col-sm-14">
 
-   <div class="spacer-div-3 hidden-xs hidden-xs"></div>
+          <!-- Publication -->
+          <h3 class="push-down-4"><span>Job Market Paper</span></h3>
 
-   <!-- Main content    -->
-   <div id="main-container" class="container">
-<div class="row">
-         <div class="col-sm-14">
-            <!-- Working Papers -->
-            <h3 class="push-down-4"><span>Working Papers</span></h3>
-
-            <ul class="publications">
-
-                <font size="+1"> <b><a href="https://bfi.uchicago.edu/wp-content/uploads/2023/08/BFI_WP_2023-108.pdf"> The Impact of Incarceration on Employment, Earnings, and Tax Filing </a> </b> </font>
-               <p style="margin-left:5%;"> (with  <a href="https://sites.google.com/view/andygarin/home" style="color:black;">A. Garin</a>, <a href="http://www.dmitrikoustas.com/" style="color:black;">D. Koustas</a>, <a href="https://www.samuel-norris.com/" style="color:black;">S. Norris</a>, <a href="https://www.matthewpecenco.com/" style="color:black;">M. Pecenco</a>, <a href="https://ekrose.github.io/" style="color:black;">E.K. Rose</a>, <a href="https://yotamshemtov.github.io/" style="color:black;">Y. Shem-Tov</a> and <a href="https://www.jeff-weaver.com/home" style="color:black;">J. Weaver</a>) <br>
-
-              <em> Revisions requested at Econometrica  </em> <br>   
-
-                <span class="badge" id="badge-more3">View Abstract</span> | <a href="https://bfi.uchicago.edu/wp-content/uploads/2023/08/BFI_WP_2023-108.pdf"> Paper </a> <!-- | <a href="">Appendix</a> -->
-
-              <div id="read-more3" style="margin-left:5%; padding: 0 0 2em 0;">
-                     We study the effect of incarceration on wages, self-employment, and taxes and transfers in North Carolina and Ohio using two quasi-experimental research designs: discontinuities in sentencing guidelines and random assignment to judges. Across both states, incarceration generates short-term drops in economic activity while individuals remain in prison. As a result, a year-long sentence decreases cumulative earnings over five years by 13%. Beyond five years, however, there is no evidence of lower employment, wage earnings, or self-employment in either state, as well as among defendants with no prior incarceration history. These results suggest that upstream factors, such as other types of criminal justice interactions or pre-existing labor market detachment, are more likely to be the cause of low earnings among the previously incarcerated, who we estimate would earn $5,000 per year on average if spared a prison sentence.
-               </div>
-               
-               <font size="+1"> <b><a href="https://irle.berkeley.edu/wp-content/uploads/2023/05/High-Minimum-Wages-and-the-Monopsony-Puzzle.pdf"> High Minimum Wages and the Monopsony Explanations </a> </b> </font>
-               <p style="margin-left:5%;"> (with  <a href="https://justinwiltshire.com/" style="color:black;">J. Wiltshire</a> [lead author], <a href="https://irle.berkeley.edu/people/michael-reich/" style="color:black;">M. Reich</a> and <a style="color:black;"> D. Sosinskiy </a>) <br>
-
-               <em> Revisions requested at Journal of Labor Economics  </em> <br>      
-
-               <span class="badge" id="badge-more2">View Abstract</span> | <a href="https://static1.squarespace.com/static/5e0fdcef27e0945c43fab131/t/651a4adf788a5547f3cea614/1696221957407/min_wage_monopsony_WMR.pdf"> Paper </a> | <a href="https://static1.squarespace.com/static/5e0fdcef27e0945c43fab131/t/65126788d71b1170bf6434ea/1695704983137/online_appendix_WMR.pdf">Appendix</a> 
-
-              <div id="read-more2" style="margin-left:5%;">
-                     We present the first causal analysis of recent large minimum wage increases, focusing on 47 large U.S. counties that reached $15 or more by 2022q1. Using novel stacked county-level synthetic control estimators, we find substantial pay growth and no disemployment effects. Our research design allows us to reduce selection and attenuation effects—by excluding counties with local minimum wages or those with high wages. We then find significant and larger positive employment effects, as the monopsony model predicts. We go on to document the presence of monopsony in the restaurant industry. We show that minimum wages reduce restaurant workers’ separation rates and that they caused McDonald’s workers’ wages to grow faster than the prices of Big Macs, suggesting the presence of monopsony power and positive economic profits. The fast food industry’s monopsony power allowed it to accommodate large minimum wage increases and raise employment.
-               </div>
-
-
-            </ul>
-
-         </div>
+          <ul class="publications">
+           <font size="+1">
+              <b
+                ><a
+                  href="https://carlmcpherson.github.io/files/mcpherson_jmp.pdf" target="_blank"
+                >
+                  How Magnetic can Welfare be? 
+                </a>
+              </b>
+            </font>
+            <p style="margin-left: 5%">
+              
+              
+              <span class="badge" id="abstractButton6">View Abstract</span> |
+              <a
+                href="https://carlmcpherson.github.io/files/mcpherson_jmp.pdf" target="_blank"
+              >
+                Paper
+              </a>
+            </p>
+            <div id="read-more6" style="margin-left: 5%; display: none">
+              Twenty states expanded Medicaid eligibility to low-income childless adults in 2014. Did this large and costly expansion of welfare attract these newly-eligible adults to expansion states? By merging administrative tax records, Medicaid enrollment records and survey data, I find that 4.7% of these adults move interstate annually, over twice the rate reported in the Current Population Survey. Nevertheless, both state-level and border-county difference-in-differences designs detect no statistically significant impact of Medicaid on migration over the first five years. These estimates are precise enough to reject meaningful budgetary or welfare costs or benefits from migration. In contrast, I find that the same subpopulation migrated substantially in response to Great Recession local shocks. This appears difficult to reconcile with the value of Medicaid. However, it may be explained by the fact that a newly-eligible adult gains less than 2 years of Medicaid enrollment in the 5 years after moving to an expansion state, or by the confusion about enrollment that I document in survey data. Regardless of the explanation, the welfare magnet effect of Medicaid expansion was negligible.
+            </div>
+          </ul>
+        </div>
       </div>
+
+        <hr>
+
+          <!------------- WORKING PAPERS ------------->
+      <div class="row">
+        <div class="col-sm-14">
+          
+          <h3 class="push-down-4"><span>Working Papers</span></h3>
+
+          <ul class="publications">
+            <font size="+1">
+              <b
+                ><a
+                  href="https://yotamshemtov.github.io/files/incar_lm.pdf"
+                >
+                  The Impact of Incarceration on Employment, Earnings, and Tax
+                  Filing
+                </a>
+              </b>
+            </font>
+            <p style="margin-left: 5%">
+              (with
+              <a
+                href="https://sites.google.com/view/andygarin/home"
+                style="color: black"
+                >A. Garin</a
+              >,
+              <a href="http://www.dmitrikoustas.com/" style="color: black"
+                >D. Koustas</a
+              >,
+              <a href="https://www.samuel-norris.com/" style="color: black"
+                >S. Norris</a
+              >,
+              <a href="https://www.matthewpecenco.com/" style="color: black"
+                >M. Pecenco</a
+              >,
+              <a href="https://ekrose.github.io/" style="color: black"
+                >E.K. Rose</a
+              >,
+              <a href="https://yotamshemtov.github.io/" style="color: black"
+                >Y. Shem-Tov</a
+              >
+              and
+              <a href="https://www.jeff-weaver.com/home" style="color: black"
+                >J. Weaver</a
+              >) <br />
+
+              <em> Conditionally Accepted at Econometrica </em> <br />
+
+              <span class="badge" id="abstractButton3">View Abstract</span> |
+              <a
+                href="https://yotamshemtov.github.io/files/incar_lm.pdf"
+              >
+                Paper
+              </a>
+              <!-- | <a href="">Appendix</a> -->
+            </p>
+
+            <div
+              id="read-more3"
+              style="margin-left: 5%; padding: 0 0 2em 0; display: none"
+            >
+              We study the effect of incarceration on wages, self-employment,
+              and taxes and transfers in North Carolina and Ohio using two
+              quasi-experimental research designs: discontinuities in sentencing
+              guidelines and random assignment to judges. Across both states,
+              incarceration generates short-term drops in economic activity
+              while individuals remain in prison. As a result, a year-long
+              sentence decreases cumulative earnings over five years by 13%.
+              Beyond five years, however, there is no evidence of lower
+              employment, wage earnings, or self-employment in either state, as
+              well as among defendants with no prior incarceration history.
+              These results suggest that upstream factors, such as other types
+              of criminal justice interactions or pre-existing labor market
+              detachment, are more likely to be the cause of low earnings among
+              the previously incarcerated, who we estimate would earn $5,000 per
+              year on average if spared a prison sentence.
+            </div>
+
+            <font size="+1">
+              <b
+                ><a
+                  href="https://irle.berkeley.edu/publications/working-papers/minimum-wage-effects-and-monopsony-explanations/"
+                >
+                  Minimum Wage Effects and Monopsony Explanations
+                </a>
+              </b>
+            </font>
+            <p style="margin-left: 5%">
+              (with
+              <a href="https://justinwiltshire.com/" style="color: black"
+                >J. Wiltshire</a
+              >
+              [lead author],
+              <a
+                href="https://irle.berkeley.edu/people/michael-reich/"
+                style="color: black"
+                >M. Reich</a
+              >
+              and
+              <a
+                href="https://sites.google.com/view/denis-sosinskiy"
+                style="color: black"
+              >
+                D. Sosinskiy</a
+              >) <br />
+
+              <em> Conditionally Accepted at Journal of Labor Economics </em>
+              <br />
+
+              <span class="badge" id="abstractButton2">View Abstract</span> |
+              <a
+                href="https://irle.berkeley.edu/publications/working-papers/minimum-wage-effects-and-monopsony-explanations/"
+              >
+                Paper
+              </a>
+            </p>
+
+            <div id="read-more2" style="margin-left: 5%; display: none">
+              We present the first causal analysis of a seven-year run-up of
+              minimum wages to $15. Using a novel stacked county-level synthetic
+              control estimator and data on fast-food restaurants, we find
+              substantial pay growth and no disemployment. Our results hold
+              among lower-wage counties and counties without local minimum
+              wages. Minimum wage increases reduce separation rates and raise
+              wages faster than prices at McDonald’s stores; both findings imply
+              a monopsonistic labor market with declining rents. In the tight
+              post-pandemic labor market, when labor supply becomes more
+              elastic, we find positive employment effects. These become larger
+              and statistically significant after addressing pandemic-response
+              confounds.
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+      <!------------- WORK IN PROGRESS ------------->
+
 
       <div class="row">
-         <div class="col-sm-14">
-            <!-- Publication -->
-            <h3 class="push-down-4"><span>Work in Progress</span></h3>
+        <div class="col-sm-14">
+          <!-- Publication -->
+          <h3 class="push-down-4"><span>Selected Work in Progress</span></h3>
 
-            <ul class="publications">
+          <ul class="publications">
+            <font size="+1">
+              
+              <b
+                ><a
+                  href=""
+                >
+                  The Effects of the ACA on Job Lock and Mortality: Evidence from Tax Data
+                </a>
+              </b>
+            </font>
+            <p style="margin-left: 5%">
+              (with
+              <a href="https://www.dmitrikoustas.com/" style="color: black"
+                >D. Koustas</a
+              >
+              ,
+              <a href="https://equitablegrowth.org/people/ithai-lurie/" style="color: black"
+                >I. Lurie</a
+              >
+              and
+              <a
+                href="https://harris.uchicago.edu/directory/robert-kaestner"
+                style="color: black"
+              >
+                R. Kaestner</a
+              >) <br />
 
-                <font size="+1"> <b><a href="" font-size: 3rem;> The Impact of Government Transfers on Migration </a> </b> </font>
-   
-               
-            </ul>
+              <em> IRS Approved Project. Presented at the <a
+                  href="https://nta.confex.com/nta/2023/meetingapp.cgi/Person/3975"
+                >
+                  2023 NTAs 
+                </a> </em>
+              <br />
 
-         </div>
+              <span class="badge" id="abstractButton4">View Abstract</span> 
+              <!-- <a
+                href="UPDATE PAPER LINK"
+              >
+                Paper
+              </a> -->
+              <!-- | <a href="">Appendix</a> -->
+            </p>
+
+             <div
+              id="read-more4"
+              style="margin-left: 5%; padding: 0 0 2em 0; display: none"
+            >
+              [Awaiting new draft and general disclosure permission.] Health insurance availability may affect work choices—often referred to as “job lock”—and is an important determinant of health. The Affordable Care Act in 2014 expanded insurance coverage via Medicaid expansions and the establishment of subsidized marketplaces, thus weakening the link between health insurance and employment. We study the effects of these policies, exploiting variation in the timing of expansions across states and using rich IRS longitudinal microdata. The universe of tax records allows us to estimate precise effects on a range of outcomes, including earnings, self-employment, job transitions, mortality, mobility and tax filing behavior. We examine heterogeneity by insurance status prior to 2014, including low-income wage earners and the self-employed without spousal coverage who would have benefited most from the policy change, as well as by income, age and gender.
+            </div>
+
+           </ul>
+        </div>
       </div>
+
+
+          <ul class="publications">
+            <font size="+1">
+              <b
+                ><a
+                  href=""
+                >
+                  Implicit Insurance for Job Loss in the United States
+                </a>
+              </b>
+            </font>
+            <p style="margin-left: 5%">
+              (with
+              <a href="https://sreekancherla.github.io/" style="color: black"
+                >S. Kancherla</a
+              >
+              and
+              <a
+                href="https://www.mattunrath.com/"
+                style="color: black"
+              >
+                M. Unrath</a
+              >) <br />
+
+              <em> Census Approved Project </em>
+              <br />
+
+     <span class="badge" id="abstractButton5">View Abstract</span> 
+
+            </p>
+
+            <div id="read-more5" style="margin-left: 5%; display: none">
+
+                We study the joint effects of the tax system, government transfers, and self-insurance in mitigating earnings losses from job loss. Transfer payments imply smaller income losses relative to wage losses; behavioral responses (asset liquidation, self-employment, income misreporting, family members’ labor supply) mitigate household income losses relative to worker income losses; and progressive tax rates imply smaller after-tax income losses relative to pre-tax income losses. We leverage a novel merge between social safety net benefit takeup in 42 US states to population tax returns and earnings data to estimate these various margins of response in a single dataset. In doing so, we will be able to integrate the tax system, transfer payments, and household responses into a net measure of household and government insurance against job loss.
+
+          </ul>
+        </div>
+      </div>
+
+
+      <ul class="publications">
+        <font size="+1">
+          <b
+            ><a
+                  href=""
+              >
+                  Who Gives to Whom? Charitable Giving in the United States
+                </a>
+              </b>
+            </font>
+            <p style="margin-left: 5%">
+              (with J. Brounstein, S. Kancherla, S. Karol, C. Landais, M. Muñoz and D. Reck) <br />
+              <em> IRS Approved Project </em>
+              </p>
+              <br />
+
+
+
+            </font>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+
+      <!------------- PUBLISHED WORK ------------->
 
       <div class="row">
-         <div class="col-sm-14">
-            <!-- Publication -->
-            <h3 class="push-down-4"><span>Publications</span></h3>
+        <div class="col-sm-14">
+          <!-- Publication -->
+          <h3 class="push-down-4"><span>Publications</span></h3>
 
-            <ul class="publications">
+          <ul class="publications">
+            <font size="+1">
+              <b
+                ><a
+                  href="https://www.aeaweb.org/articles?id=10.1257/pandp.20201039"
+                  font-size:
+                  3rem;
+                >
+                  Is New Platform Work Different than Other Freelancing?
+                </a>
+              </b>
+            </font>
+            <p style="margin-left: 5%">
+              (with
+              <a
+                href="https://sites.google.com/view/andygarin/home"
+                style="color: black"
+                >A. Garin</a
+              >,
+              <a
+                href="https://sites.google.com/view/jacksonemilie"
+                style="color: black"
+                >E. Jackson</a
+              >
+              and
+              <a href="http://www.dmitrikoustas.com/" style="color: black"
+                >D. Koustas</a
+              >) <br />
+              <b> AEA Papers and Proceedings </b> (2020) <br />
 
-                <font size="+1"> <b><a href="https://www.aeaweb.org/articles?id=10.1257/pandp.20201039" font-size: 3rem;> Is New Platform Work Different than Other Freelancing? </a> </b> </font>
-               <p style="margin-left:5%;"> (with  <a href="https://sites.google.com/view/andygarin/home" style="color:black;">A. Garin</a>, <a href="https://sites.google.com/view/jacksonemilie" style="color:black;">E. Jackson</a> and <a href="http://www.dmitrikoustas.com/" style="color:black;">D. Koustas</a>) <br>
-               <b> AEA Papers and Proceedings  </b> (2020) <br>
+              <span class="badge" id="abstractButton1">View Abstract</span> |
+              <a href="http://www.dmitrikoustas.com/TaxData_P_P_2019.pdf">
+                Paper
+              </a>
+              |
+              <a
+                href="http://www.dmitrikoustas.com/Appendix_TaxData_P_P_2019.pdf"
+                >Appendix</a
+              >
+              |
+              <a
+                href="https://www.openicpsr.org/openicpsr/project/120686/version/V1/view?path=/openicpsr/120686/fcr:versions/V1&type=project"
+                >Replication Materials</a
+              >
+            </p>
 
-               <span class="badge" id="badge-more1">View Abstract</span> | <a href="http://www.dmitrikoustas.com/TaxData_P_P_2019.pdf"> Paper </a> | <a href="http://www.dmitrikoustas.com/Appendix_TaxData_P_P_2019.pdf">Appendix</a> | <a href="https://www.openicpsr.org/openicpsr/project/120686/version/V1/view?path=/openicpsr/120686/fcr:versions/V1&type=project">Replication Materials</a> </p>
-
-              <div id="read-more1" style="margin-left:5%;">
-                     The rise of freelance work in the online platform economy (OPE) has received considerable media and policy attention in recent years, but freelance work is by no means a new phenomenon. In this paper, we draw on I.R.S. tax records to identify instances when workers begin doing online platform work versus other freelance/independent contractor “gig” work for firms. We find gig work occurs around major reductions in outside income, and document usage over the lifecycle. Our results provide suggestive evidence on motivations for entering into each type of work.
-               </div>
-               
-               
-            </ul>
-
-         </div>
+            <div id="read-more1" style="margin-left: 5%; display: none">
+              The rise of freelance work in the online platform economy (OPE)
+              has received considerable media and policy attention in recent
+              years, but freelance work is by no means a new phenomenon. In this
+              paper, we draw on I.R.S. tax records to identify instances when
+              workers begin doing online platform work versus other
+              freelance/independent contractor “gig” work for firms. We find gig
+              work occurs around major reductions in outside income, and
+              document usage over the lifecycle. Our results provide suggestive
+              evidence on motivations for entering into each type of work.
+            </div>
+          </ul>
+        </div>
       </div>
+    </div>
 
-   </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-   <!-- footer include -->
-   <div w3-include-html="footer.html"></div>
+    <!-- footer include -->
+    <div w3-include-html="footer.html"></div>
 
-   <!-- jQuery -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-   <!-- Bootstrap JS Library -->
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS Library -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
 
-   <!-- html file include script | used for navbar and footer -->
-   <script src="js/w3data.js"></script>
-   <script>
-      w3IncludeHTML()
-   </script>
+    <!-- html file include script | used for navbar and footer -->
+    <script src="js/w3data.js"></script>
+    <script>
+      w3IncludeHTML();
+    </script>
 
-   <!-- Local scripts -->
-   <script src="js/main.js"></script>
+    <!-- Local scripts -->
+    <script src="js/main.js"></script>
 
-   <script>
-      $(document).ready(function() {
-         $("li#research a").addClass("active");
-         $("li#research a").addClass("hvr-bubble-bottom");
-
+    <script>
+      $(document).ready(function () {
+        $("li#research a").addClass("active");
+        $("li#research a").addClass("hvr-bubble-bottom");
       });
-   </script>
-
-</body>
-
+    </script>
+  </body>
 </html>
