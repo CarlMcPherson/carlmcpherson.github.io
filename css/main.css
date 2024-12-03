@@ -24,7 +24,7 @@ body {
 
 .publications {
   list-style-type: none;
-  padding-left: 0.5rem;
+  padding-left: 2rem;
 }
 
 .publications li {
@@ -185,15 +185,15 @@ nav {
 }
 
 .push-down-2 {
-  margin-top: 2rem !important;
+  margin-top: 1rem !important;
 }
 
 .push-down-3 {
-  margin-top: 3rem !important;
+  margin-top: 1rem !important;
 }
 
 .push-down-4 {
-  margin-top: 4rem !important;
+  margin-top: 1rem !important;
 }
 
 .push-down-5 {
@@ -246,7 +246,7 @@ h3 {
 h3 span {
   background-color: white;
   padding-right: 10px;
-  padding-left:0.5rem;
+  padding-left:2rem;
 }
 
 /* Format the footer ---------------------------------------------------------- */
